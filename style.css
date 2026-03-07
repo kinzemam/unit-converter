@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    
+}
+
+header {
+    height: 35vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: blueviolet;
+    color: white;
+}
+header h1{
+    font-size: 4rem;
+}
+header input{
+    width: 120px;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background: blueviolet;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+header button{
+    width: 95px;
+    height: 35px;
+    color: blueviolet;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+.main {
+    height: 60vh;
+    width: 100%;
+    background: rgba(245, 245, 220, 0.644);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: blueviolet;
+}
+
+.container{
+    font-size: large;
+    width: 90%;
+    height: 80px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 6px 6px 10px rgba(211, 211, 211, 0.466);
+}
+
+.content{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: grey;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 8px 10px rgba(71, 71, 71, 0.459);
+}
