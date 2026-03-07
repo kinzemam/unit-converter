@@ -5,9 +5,15 @@
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
     font-style: normal;
-    
+
 }
 
+body {
+    background: rgba(245, 245, 220, 0.644);
+}
+.main-dark{
+    background: #1d2125;
+}
 header {
     height: 35vh;
     width: 100%;
@@ -20,21 +26,23 @@ header {
     background: blueviolet;
     color: white;
 }
-header h1{
+
+header h1 {
     font-size: 4rem;
 }
-header input{
+
+header input {
     width: 120px;
     height: 80px;
     border-radius: 5px;
     border: 2px solid grey;
-    background: blueviolet;
+    background: none;
     font-size: 3rem;
     color: white;
     text-align: center;
 }
 
-header button{
+header button {
     width: 95px;
     height: 35px;
     color: blueviolet;
@@ -42,10 +50,16 @@ header button{
     border-radius: 3px;
     border: 1px solid grey;
 }
+
+.head-dark{
+    /* background: #a855f7; */
+    background: linear-gradient(135deg,rgb(20, 4, 39), rgb(7, 7, 58));
+    /* color: rgb(51, 50, 50); */
+}
+
 .main {
-    height: 60vh;
+    height: 50vh;
     width: 100%;
-    background: rgba(245, 245, 220, 0.644);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +68,7 @@ header button{
     color: blueviolet;
 }
 
-.container{
+.container {
     font-size: large;
     width: 90%;
     height: 80px;
@@ -62,17 +76,55 @@ header button{
     border-radius: 10px;
     text-align: center;
     padding-top: 20px;
-    box-shadow: 6px 6px 10px rgba(211, 211, 211, 0.466);
+    /* border: 1px solid darkblue; */
+    box-shadow: 5px 10px 10px rgba(0, 0 , 0 , 0.3);
 }
 
-.content{
+.container-dark{
+    background: rgb(20, 4, 39);
+    color: #ffffff;
+}
+
+
+.content {
     margin-top: 10px;
     font-size: 1rem;
     color: grey;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 0 8px 10px rgba(71, 71, 71, 0.459);
+    box-shadow: 0 8px 10px rgba(71, 71, 71, 0.747);
+}
+
+.theme {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: grey; */
+}
+
+.dark-btn {
+    width: 35px;
+    height: 35px;
+    background-image: url('dark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+.light-btn{
+    background-image: url('light-mde.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
 }
