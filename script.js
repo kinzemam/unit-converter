@@ -11,9 +11,9 @@ const volEl = document.getElementById('vol-cont')
 const massEl = document.getElementById('mass-cont')
 const myBtn = document.getElementById('convert-btn')
 const themeBtn = document.getElementById('theme-btn')
-const headEl = document.getElementById('head')
+const headEl = document.querySelector('header')
 const bodyEl = document.querySelector('body')
-const containerEl = document.querySelectorAll('.container')
+const containerEl = document.querySelectorAll('.card')
 const themeEl = document.querySelector('.theme button')
 myBtn.addEventListener("click", function () {
     volEl.textContent = ''
@@ -36,10 +36,18 @@ myBtn.addEventListener("click", function () {
 themeBtn.addEventListener('click', function(){
     bodyEl.classList.toggle('main-dark')
     containerEl.forEach(function (container) {
-        container.classList.toggle('container-dark')
+
+        container.classList.toggle('container-dark');
+        container.classList.toggle('light-text')
     })
+    myBtn.classList.toggle('btn-outline-light');
+    myBtn.classList.toggle('btn-outline-dark');
     headEl.classList.toggle('head-dark')
     themeBtn.classList.toggle('light-btn')
+    inputEl.style.borderColor = 'white';
 
+    document.querySelectorAll('.content').forEach((e) => {
+        e.classList.toggle('dark-text')
+    })
     // console.log(themeEl)
 })
