@@ -52,11 +52,12 @@ header button {
 .main {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
     color: blueviolet;
 }
 
 .card {
+    height: 6rem;
     font-size: large;
     border-radius: 10px;
     padding-top: 20px;
@@ -71,7 +72,6 @@ header button {
 
 
 .content {
-    margin-top: 10px;
     font-size: 1rem;
     color: grey;
 }
